@@ -14,16 +14,15 @@
     "start": "npm start --workspaces --if-present",
     "test": "npm run test:backend && npm run test:frontend",
     "test:frontend": "npm test --workspace=frontend",
-    "test:backend": "vitest run -c tests/vitest.config.ts",
-    "prepare": "husky"
+    "test:backend": "vitest run -c tests/vitest.config.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-
-  },
   "dependencies": {
+      "prettier": "^3.5.3",
+      "ic-mops": "^1.8.0",
+      "@dfinity/pic": "^0.13.1"
 
   }
 }
